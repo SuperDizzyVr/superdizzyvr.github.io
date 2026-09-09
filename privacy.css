@@ -1,0 +1,46 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #192b2a;
+  background: #f4f6f3;
+  line-height: 1.65;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: #126051; text-underline-offset: .18em; overflow-wrap: anywhere; }
+a:hover { text-decoration-thickness: .15em; }
+a:focus-visible { outline: 3px solid #126051; outline-offset: 4px; }
+.skip { position: absolute; left: 1rem; top: -10rem; }
+.skip:focus { top: 1rem; background: white; padding: .5rem 1rem; }
+.page { max-width: 880px; margin: 0 auto; padding: 2.5rem 2rem 4rem; }
+.top { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; border-bottom: 1px solid #cbd5ce; padding-bottom: 1rem; }
+.brand { font-weight: 650; }
+.language { display: flex; gap: 1rem; }
+h1, h2, h3 { line-height: 1.2; letter-spacing: -.025em; }
+h1 { font-size: clamp(2.1rem, 6vw, 3.4rem); margin: 2.5rem 0 .75rem; }
+h2 { margin-top: 2.5rem; font-size: 1.45rem; }
+h3 { margin-top: 1.5rem; font-size: 1.05rem; }
+p, ul, ol { margin: .75rem 0 1rem; }
+li + li { margin-top: .45rem; }
+.meta { color: #52635e; font-size: .95rem; }
+.draft { background: #fff3d3; border-left: 4px solid #9f6500; padding: 1rem 1.25rem; margin: 1.5rem 0; color: #523500; }
+.contents { padding: 1rem 1.25rem; border: 1px solid #cbd5ce; border-radius: .5rem; margin: 1.5rem 0 2rem; }
+.contents ul { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; list-style: none; padding: 0; margin: .5rem 0 0; }
+.contents li { margin: 0; }
+.contact { border-left: 3px solid #126051; padding-left: 1.25rem; overflow-wrap: anywhere; }
+address { font-style: normal; }
+.deletion { background: #e5eee7; border-radius: .5rem; padding: .1rem 1.25rem 1rem; margin-top: 2.5rem; }
+.deletion h2 { margin-top: 1.25rem; }
+footer { border-top: 1px solid #cbd5ce; margin-top: 3rem; padding-top: 1rem; font-size: .9rem; color: #52635e; }
+@media (max-width: 540px) {
+  .page { padding: 1.5rem 1.15rem 3rem; }
+  h1 { margin-top: 2rem; }
+  ul, ol { padding-left: 1.35rem; }
+}
+@media print {
+  :root { background: white; color: black; font-size: 10pt; }
+  .page { max-width: none; padding: 0; }
+  .contents, .skip, .language { display: none; }
+  h2, h3 { break-after: avoid; }
+  a { color: inherit; }
+}
