@@ -20,7 +20,7 @@
   </header>
   <main id="main">
     <h1>Privacy Policy</h1>
-    <p class="meta">Last updated: 10 September 2026 · Meta Quest app ID: 1351504401376213</p>
+    <p class="meta">Last updated: 19 September 2026 · Meta Quest app ID: 1351504401376213</p>
     <p>This policy explains how Kim Cornelius Kahns ("we", "us") processes personal data when you use Abduction Denied!, its matchmaking and multiplayer services, or this website.</p>
     <nav class="contents" aria-label="On this page">
       <strong>On this page</strong>
@@ -46,6 +46,10 @@
       <h3>Multiplayer activity and movement</h3>
       <p>During online play, our game server processes and shares relevant in-game names, character appearance, team membership, positions, head and hand/controller poses, movement inputs, actions and game state with players in the match. This makes avatars, interactions, combat and scoring work consistently. Movement data is used for gameplay, not to identify you through biometric analysis.</p>
       <p>We store match records containing player IDs and names, team, kills, deaths, scores, round results and match start/end times to maintain gameplay history. Completed results may also be temporarily queued on the game server until our matchmaking service receives them. The game does not persist a recording of the continuous head and hand movement stream as part of these match records.</p>
+
+      <h3>Baby Rescue ratings and progression</h3>
+      <p>For eligible ranked Baby Rescue matches, the game server also records validated combat, healing, objective, utility, equipment and economy events, their times and relevant in-game positions, participation intervals and limited connection-quality measurements. Events use internal player IDs. After the match completes, the server sends this evidence to our matchmaking service to calculate skill (MMR), teamplay (TPR), placements, rank and Equipment Points, and to check and improve these calculations. Deathmatch does not use this ranked evidence or award pipeline.</p>
+      <p>We retain rating and reward summaries, their calculation versions and an award history with your profile. Your authenticated progression screen receives your ratings and rewards; it does not receive other players' private event evidence. This collection adds no continuous movement recording, microphone or camera data.</p>
 
       <h3>Connections, security and support</h3>
       <p>Our servers process your IP address and connection information to communicate with your device and limit excessive requests. Operational diagnostics include sign-in outcomes, timing and technical errors. If you contact us, we process your email address, message and the information needed to handle your request.</p>
@@ -78,6 +82,7 @@
         <li><strong>Player profiles and match history:</strong> retained to maintain your profile and history while needed for that purpose, or until a valid deletion request is fulfilled. There is currently no automatic deletion based on account inactivity.</li>
         <li><strong>Sign-in data:</strong> temporary Meta proofs are processed for verification and are not stored in our account database. API sessions expire after 24 hours; expired session hashes are cleared on subsequent successful Meta sign-ins. Retired guest credential hashes remain with the linked profile until its deletion.</li>
         <li><strong>Live gameplay:</strong> continuous movement and network state is processed in memory for the running game and temporary gameplay buffers. Persisted match summaries are handled as match history.</li>
+        <li><strong>Ranked event evidence:</strong> detailed Baby Rescue evidence expires 30 days after processing and is cleared by retention maintenance, scheduled at least daily. Rating and contribution summaries, rank, Equipment Points and award records remain with your account under the profile/history retention above. Completed uploads remain temporarily queued until acknowledged; failed uploads are handled as part of the same retention and deletion procedure.</li>
         <li><strong>Operational logs:</strong> we exclude the matchmaking service's request and container logs from our Cloud Logging storage. Connection information needed for live communication and rate limiting is processed in memory. Hosting providers may retain infrastructure, security and audit records under their service terms; this setting does not disable those records. GitHub's website logging described above is separate.</li>
         <li><strong>Backups:</strong> PlanetScale database backups are scheduled every 12 hours and retained for two days, within our maximum retention of six months. Backups are used for recovery and are deleted or overwritten after retention expires. A deletion request also applies to personal data in backup copies; the ordinary retention limit does not postpone fulfilling such a request.</li>
         <li><strong>Support correspondence:</strong> kept while needed to handle your request; after resolution, retained only to the extent necessary for legal obligations or establishing, exercising or defending legal claims.</li>
@@ -94,6 +99,7 @@
         <li>We may ask for limited additional information to verify that the profile belongs to you. Never send your Meta password, authentication proof or session/installation credential. Do not post your request or account details in a public GitHub issue.</li>
       </ol>
       <p>After verification, we delete your game profile, Meta association and authentication records and remove or irreversibly anonymise the personal data linked to you in stored match results and pending result uploads, subject to applicable retention exceptions. We also apply the backup handling described above. For a guest profile, lost installation information may limit our ability to identify the correct records; we will explain any such limitation.</p>
+      <p>This includes ranked event evidence, contribution summaries, ratings and reward records. Where evidence is stored as a shared match document, we remove that document; other participants can keep their previously awarded balances.</p>
       <p>We respond without undue delay and normally within one month of receiving your request. If a legally permitted extension is necessary, we inform you within that month and explain why. You do not need a GitHub account to request deletion.</p>
       <p>Uninstalling the game does not automatically delete server data. Deleting your game profile does not delete data held independently by Meta or GitHub. Launching the game and signing in or registering as a guest again after deletion can create a new profile.</p>
     </section>
