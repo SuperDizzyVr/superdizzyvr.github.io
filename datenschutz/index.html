@@ -20,7 +20,7 @@
   </header>
   <main id="main">
     <h1>Datenschutzerklärung</h1>
-    <p class="meta">Stand: 19. September 2026 · Meta-Quest-App-ID: 1351504401376213</p>
+    <p class="meta">Stand: 20. September 2026 · Meta-Quest-App-ID: 1351504401376213</p>
     <p>Diese Erklärung beschreibt, wie Kim Cornelius Kahns („wir“, „uns“) personenbezogene Daten verarbeitet, wenn du Abduction Denied!, die zugehörigen Matchmaking- und Multiplayer-Dienste oder diese Website nutzt.</p>
     <nav class="contents" aria-label="Auf dieser Seite">
       <strong>Auf dieser Seite</strong>
@@ -51,9 +51,13 @@
       <p>Für gewertete Baby-Rescue-Matches erfasst der Spielserver zusätzlich bestätigte Kampf-, Heilungs-, Missions-, Hilfsmittel-, Ausrüstungs- und Kaufereignisse, deren Zeitpunkte und relevante Positionen im Spiel, Teilnahmeintervalle sowie begrenzte Messwerte zur Verbindungsqualität. Die Ereignisse verwenden interne Spieler-IDs. Erst nach Abschluss des Matches übermittelt der Server diese Informationen an den Matchmaking-Dienst, um Spielstärke (MMR), Teamplay (TPR), Platzierungsspiele, Rang und Equipment Points zu berechnen und diese Berechnungen zu prüfen und zu verbessern. Deathmatch nutzt diese Datenerfassung und Belohnungsvergabe für gewertete Matches nicht.</p>
       <p>Mit deinem Profil speichern wir Zusammenfassungen der Wertungen und Belohnungen, die Versionen der Berechnungsregeln und eine Vergabehistorie. Deine angemeldete Fortschrittsansicht erhält deine Wertungen und Belohnungen, aber keine privaten Ereignisdaten anderer Spieler. Hierfür werden keine fortlaufenden Bewegungsaufzeichnungen, Mikrofon- oder Kameradaten ergänzt.</p>
 
+      <h3>Optionaler Live-Sprachchat</h3>
+      <p>Mit Mikrofonberechtigung und aktiviertem Mikrofon in den Audio-Einstellungen erfasst das Spiel während des Online-Spiels deine Stimme und übermittelt komprimierten Ton über den Spielserver an berechtigte Spieler desselben Matches. In der Lobby können dich alle hören; im Spiel hören dich Teammitglieder auf der gesamten Karte, auch nach dem Tod, und lebende Gegner in der Nähe hören räumlichen Ton. Du kannst dein Mikrofon stummschalten und die Sprachlautstärke in den Audio-Einstellungen anpassen. Der Offline-Spielplatz überträgt keine Sprache.</p>
+      <p>Sprache wird für die Live-Wiedergabe in kurzlebigen Arbeitsspeicher-Puffern verarbeitet. Wir speichern keine Sprachaufnahmen, nehmen Ton nicht in die Daten für Ranglisten-Matches auf und senden ihn nicht an die Matchmaking-API oder Datenbank. TwoVoIP ist eine im Spiel enthaltene Codec-Bibliothek, kein externer Sprachhosting-Dienst.</p>
+
       <h3>Verbindungen, Sicherheit und Support</h3>
       <p>Unsere Server verarbeiten deine IP-Adresse und Verbindungsinformationen, um mit deinem Gerät zu kommunizieren und übermäßig viele Anfragen zu begrenzen. Betriebsdiagnosen umfassen Anmeldeergebnisse, Laufzeiten und technische Fehler. Wenn du uns kontaktierst, verarbeiten wir deine E-Mail-Adresse, deine Nachricht und die zur Bearbeitung nötigen Angaben.</p>
-      <p>Wir verkaufen keine Spielerdaten und verwenden sie nicht für Werbung. Das Spiel bindet keinen Werbe- oder gesonderten Analysedienst ein. Es zeichnet weder Mikrofonton noch Kamerabilder auf, fragt weder Kontakte noch Freundeslisten ab und verwendet keine Hardware-Seriennummern zur Spieleridentifizierung.</p>
+      <p>Wir verkaufen keine Spielerdaten und verwenden sie nicht für Werbung. Das Spiel bindet keinen Werbe- oder gesonderten Analysedienst ein. Es speichert keine Sprachchat-Aufnahmen und erfasst keine Kamerabilder, fragt weder Kontakte noch Freundeslisten ab und verwendet keine Hardware-Seriennummern zur Spieleridentifizierung.</p>
     </section>
 
     <section id="basis">
@@ -66,7 +70,7 @@
     <section id="sharing">
       <h2>4. Wer Daten erhält</h2>
       <ul>
-        <li><strong>Andere Spieler:</strong> die für Multiplayer benötigten Namen, Spielfiguren, Aktionen und Match-Informationen. Deine Meta-Konto-ID und Anmeldeschlüssel gehören nicht zu den Informationen, die anderen Spielern angezeigt werden.</li>
+        <li><strong>Andere Spieler:</strong> die für Multiplayer benötigten Namen, Spielfiguren, Aktionen und Match-Informationen sowie Live-Sprache bei aktiviertem Sprachchat. Deine Meta-Konto-ID und Anmeldeschlüssel gehören nicht zu den Informationen, die anderen Spielern angezeigt werden.</li>
         <li><strong>Spiel-Hosting:</strong> Wir betreiben den eigentlichen Spielserver getrennt vom Matchmaking-Dienst. Google Cloud Run stellt die Matchmaking- und Anmelde-API in Nord-Virginia, USA (<code>us-east4</code>), bereit; Google Firebase Hosting stellt deren HTTPS-Zugang bereit. Google verarbeitet die an diese API gesendeten Konto-, Anmelde-, Verbindungs- und Match-Informationen. PlanetScale, Inc. betreibt die PostgreSQL-Datenbank und ihre Backups bei Amazon Web Services in Nord-Virginia, USA (<code>us-east-1</code>). Dort werden Profile, Kontozuordnungen, Sitzungshashes und Match-Historien gespeichert. Laufende Kopf- und Handbewegungen werden an den Spielserver übermittelt, nicht an die Matchmaking-Datenbank.</li>
         <li><strong>Meta:</strong> Anmeldungen und Berechtigungsprüfungen nutzen Metas Plattformdienste. Meta verarbeitet Daten über seine eigenen Konten, Geräte und Dienste gemäß seiner <a href="https://www.meta.com/legal/privacy-policy/">Datenschutzrichtlinie</a>. Die Löschung deines Spielprofils löscht nicht dein Meta-Konto.</li>
         <li><strong>GitHub:</strong> Diese Datenschutz-Website wird über GitHub Pages gehostet. GitHub erhält beim Besuch deine IP-Adresse und technische Anfrageinformationen. GitHub gibt an, IP-Adressen von Besuchern zu Sicherheitszwecken zu protokollieren, auch ohne GitHub-Anmeldung. Siehe <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">Datenerhebung durch GitHub Pages</a> und <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHubs Datenschutzerklärung</a>.</li>

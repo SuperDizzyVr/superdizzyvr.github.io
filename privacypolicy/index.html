@@ -20,7 +20,7 @@
   </header>
   <main id="main">
     <h1>Privacy Policy</h1>
-    <p class="meta">Last updated: 19 September 2026 · Meta Quest app ID: 1351504401376213</p>
+    <p class="meta">Last updated: 20 September 2026 · Meta Quest app ID: 1351504401376213</p>
     <p>This policy explains how Kim Cornelius Kahns ("we", "us") processes personal data when you use Abduction Denied!, its matchmaking and multiplayer services, or this website.</p>
     <nav class="contents" aria-label="On this page">
       <strong>On this page</strong>
@@ -51,9 +51,13 @@
       <p>For eligible ranked Baby Rescue matches, the game server also records validated combat, healing, objective, utility, equipment and economy events, their times and relevant in-game positions, participation intervals and limited connection-quality measurements. Events use internal player IDs. After the match completes, the server sends this evidence to our matchmaking service to calculate skill (MMR), teamplay (TPR), placements, rank and Equipment Points, and to check and improve these calculations. Deathmatch does not use this ranked evidence or award pipeline.</p>
       <p>We retain rating and reward summaries, their calculation versions and an award history with your profile. Your authenticated progression screen receives your ratings and rewards; it does not receive other players' private event evidence. This collection adds no continuous movement recording, microphone or camera data.</p>
 
+      <h3>Optional live voice chat</h3>
+      <p>With microphone permission and the microphone enabled in Audio settings, the game captures your voice during online play and sends compressed audio through the gameplay server to eligible players in the same match. Everyone in your lobby can hear you; during play, teammates can hear you across the map, including after death, and nearby living enemies can hear spatial voice. You can mute your microphone and adjust voice volume in Audio settings. The offline playground does not transmit voice.</p>
+      <p>Voice is processed in short-lived memory buffers for live playback. We do not save voice recordings, include audio in ranked-match evidence, or send it to the matchmaking API or database. TwoVoIP is a codec library included in the game, not an external voice-hosting service.</p>
+
       <h3>Connections, security and support</h3>
       <p>Our servers process your IP address and connection information to communicate with your device and limit excessive requests. Operational diagnostics include sign-in outcomes, timing and technical errors. If you contact us, we process your email address, message and the information needed to handle your request.</p>
-      <p>We do not sell player data or use it for advertising. The game does not integrate an advertising or separate analytics service. It does not record microphone audio or camera images, request your contacts or friends list, or use hardware serial numbers to identify players.</p>
+      <p>We do not sell player data or use it for advertising. The game does not integrate an advertising or separate analytics service. It does not save voice-chat recordings or capture camera images, request your contacts or friends list, or use hardware serial numbers to identify players.</p>
     </section>
 
     <section id="basis">
@@ -66,7 +70,7 @@
     <section id="sharing">
       <h2>4. Who receives data</h2>
       <ul>
-        <li><strong>Other players:</strong> the name, character, actions and match information needed for multiplayer. We do not include your Meta account ID or authentication credentials in the information displayed to other players.</li>
+        <li><strong>Other players:</strong> the name, character, actions and match information needed for multiplayer, and live voice where voice chat is enabled. We do not include your Meta account ID or authentication credentials in the information displayed to other players.</li>
         <li><strong>Game hosting:</strong> we operate the gameplay server separately from the matchmaking service. Google Cloud Run hosts the matchmaking and sign-in API in Northern Virginia, USA (<code>us-east4</code>); Google Firebase Hosting provides its HTTPS entry point. Google processes the account, authentication, connection and match information sent to that API. PlanetScale, Inc. hosts the PostgreSQL database and its backups on Amazon Web Services in Northern Virginia, USA (<code>us-east-1</code>), storing profiles, account associations, session hashes and match history. Live head and hand movement goes to the gameplay server, not the matchmaking database.</li>
         <li><strong>Meta:</strong> sign-in and entitlement checks use Meta's platform services. Meta processes data about its own accounts, devices and services under its <a href="https://www.meta.com/legal/privacy-policy/">privacy policy</a>. Deleting your game profile does not delete your Meta account.</li>
         <li><strong>GitHub:</strong> this privacy website is hosted by GitHub Pages. GitHub receives your IP address and technical request information when you visit. GitHub states that it logs visitors' IP addresses for security, including visits without a GitHub login. See <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">GitHub Pages data collection</a> and <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>.</li>
